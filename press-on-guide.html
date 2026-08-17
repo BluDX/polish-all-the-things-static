@@ -13,87 +13,7 @@
 </head>
 <body class="font-body">
 
-<!-- Navbar -->
-<nav class="bg-transparent border-secondary absolute top-0 left-0 right-0 z-50">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <span class="self-center text-2xl font-bold font-heading whitespace-nowrap text-text hidden lg:inline">Polish ALL the Things!</span>
-        </a>
-        <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text rounded-lg lg:hidden hover:bg-accent focus:outline-none focus:ring-2 focus:ring-secondary" aria-controls="navbar-multi-level" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-        </button>
-        <div class="hidden w-full lg:block lg:w-auto" id="navbar-multi-level">
-            <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-400 rounded-lg bg-gray-700/85 shadow-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent lg:shadow-none">
-                <li>
-                    <a href="index.html#" class="block py-2 px-3 text-white bg-secondary rounded-sm lg:bg-transparent lg:text-secondary lg:p-0 font-bold" aria-current="page">Home</a>
-                </li>
-                <li>
-                    <a href="index.html#about" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">About</a>
-                </li>
-                <li>
-                    <a href="http://www.blu.fyi/search/label/%F0%9F%92%85%20%F0%9F%93%B7" target="_blank" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Blog</a>
-                </li>
-                <li>
-                    <a href="index.html#contact" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Contact</a>
-                </li>
-                <li>
-                    <a href="index.html#follow" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Follow</a>
-                </li>
-                <a href="press-on-guide.html" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Guide</a>
-                </li>
-                <li>
-                    <button id="dropdownInstructionsLink" data-dropdown-toggle="dropdownInstructions" class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:w-auto lg:text-text">Instructions<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                    </svg></button>
-
-                    <!-- Dropdown menu -->
-                    <div id="dropdownInstructions" class="z-10 hidden font-normal bg-gray-700/85 border border-gray-400 divide-y divide-gray-400 rounded-lg shadow-lg w-44">
-                        <ul class="py-2 text-sm text-white" aria-labelledby="dropdownInstructionsLink">
-                            <li>
-                                <a href="care-of-jewelry.html" class="block px-4 py-2 hover:bg-gray-600">Care of Jewelry</a>
-                            </li>
-                            <li>
-                                <a href="decal-application.html" class="block px-4 py-2 hover:bg-gray-600">Decal Application</a>
-                            </li>
-                            <li>
-                                <a href="press-on-application.html" class="block px-4 py-2 hover:bg-gray-600">Press-On Application</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <button id="dropdownShopLink" data-dropdown-toggle="dropdownShop" class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:w-auto lg:text-text">Shop<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                    </svg></button>
-
-                    <!-- Dropdown menu -->
-                    <div id="dropdownShop" class="z-10 hidden font-normal bg-gray-700/85 border border-gray-400 divide-y divide-gray-400 rounded-lg shadow-lg w-44">
-                        <ul class="py-2 text-shadow-lg text-white text-shadow-black" aria-labelledby="dropdownShopLink">
-                            <li>
-                                <a href="index.html#pressons" class="block px-4 py-2 hover:bg-gray-600">Press-On Nails</a>
-                            </li>
-                            <li>
-                                <a href="index.html#kit" class="block px-4 py-2 hover:bg-gray-600">Press-On Sizing Kit</a>
-                            </li>
-                            <li>
-                                <a href="index.html#vinyls" class="block px-4 py-2 hover:bg-gray-600">Nail Art Vinyls</a>
-                            </li>
-                            <li>
-                                <a href="index.html#decals" class="block px-4 py-2 hover:bg-gray-600">Waterslide Decals</a>
-                            </li>
-                            <li>
-                                <a href="index.html#jewelry" class="block px-4 py-2 hover:bg-gray-600">Jewelry</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+{{> navbar }}
 
 <!-- Logo -->
 <img class="h-auto w-full" src="/logo.png" alt="Polish ALL the Things! Logo">
@@ -116,15 +36,7 @@
         </section>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <hr class="my-6 border-secondary sm:mx-auto lg:my-8" />
-            <div class="flex items-center justify-center">
-                <span class="text-sm text-text text-center">© 2025 <a href="#" class="hover:underline">Polish ALL the Things!</a>. All Rights Reserved.</span>
-            </div>
-        </div>
-    </footer>
+{{> footer }}
 </div>
 
 <!--Got this from Claude for Sticky Menus-->
