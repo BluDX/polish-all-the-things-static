@@ -16,29 +16,29 @@
                     {{#if isHome}}
                     <a href="{{home}}#" class="block py-2 px-3 text-white bg-secondary rounded-sm lg:bg-transparent lg:text-secondary lg:p-0 font-bold" aria-current="page">Home</a>
                     {{else}}
-                    <a href="{{home}}#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Home</a>
+                    <a href="{{home}}#" class="nav-link">Home</a>
                     {{/if}}
                 </li>
                 <li>
-                    <a href="{{home}}#about" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">About</a>
+                    <a href="{{home}}#about" class="nav-link">About</a>
                 </li>
                 <li>
-                    <a href="{{home}}#app" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">✨ App</a>
+                    <a href="{{home}}#app" class="nav-link">✨ App</a>
                 </li>
                 <li>
-                    <a href="http://blog.polishallthethings.com" target="_blank" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Blog</a>
+                    <a href="http://blog.polishallthethings.com" target="_blank" class="nav-link">Blog</a>
                 </li>
                 <li>
-                    <a href="{{home}}#contact" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Contact</a>
+                    <a href="{{home}}#contact" class="nav-link">Contact</a>
                 </li>
                 <li>
-                    <a href="{{home}}#follow" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Follow</a>
+                    <a href="{{home}}#follow" class="nav-link">Follow</a>
                 </li>
                 <li>
-                    <a href="press-on-guide.html#pressOnGuide" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Guide</a>
+                    <a href="press-on-guide.html#pressOnGuide" class="nav-link">Guide</a>
                 </li>
                 <li>
-                    <button id="dropdownInstructionsLink" data-dropdown-toggle="dropdownInstructions" class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:w-auto lg:text-text">Instructions<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <button id="dropdownInstructionsLink" data-dropdown-toggle="dropdownInstructions" class="dropdown-toggle">Instructions<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                     </svg></button>
 
@@ -46,19 +46,19 @@
                     <div id="dropdownInstructions" class="z-10 hidden font-normal bg-gray-700/85 border border-gray-400 divide-y divide-gray-400 rounded-lg shadow-lg w-44">
                         <ul class="py-2 text-sm text-white" aria-labelledby="dropdownInstructionsLink">
                             <li>
-                                <a href="care-of-jewelry.html#careOfJewelry" class="block px-4 py-2 hover:bg-gray-600">Care of Jewelry</a>
+                                <a href="care-of-jewelry.html#careOfJewelry" class="dropdown-link">Care of Jewelry</a>
                             </li>
                             <li>
-                                <a href="decal-application.html#decalApplication" class="block px-4 py-2 hover:bg-gray-600">Decal Application</a>
+                                <a href="decal-application.html#decalApplication" class="dropdown-link">Decal Application</a>
                             </li>
                             <li>
-                                <a href="press-on-application.html#pressOnApplication" class="block px-4 py-2 hover:bg-gray-600">Press-On Application</a>
+                                <a href="press-on-application.html#pressOnApplication" class="dropdown-link">Press-On Application</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <button id="dropdownShopLink" data-dropdown-toggle="dropdownShop" class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:w-auto lg:text-text">Shop<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <button id="dropdownShopLink" data-dropdown-toggle="dropdownShop" class="dropdown-toggle">Shop<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                     </svg></button>
 
@@ -66,19 +66,19 @@
                     <div id="dropdownShop" class="z-10 hidden font-normal bg-gray-700/85 border border-gray-400 divide-y divide-gray-400 rounded-lg shadow-lg w-44">
                         <ul class="py-2 text-shadow-lg text-white text-shadow-black" aria-labelledby="dropdownShopLink">
                             <li>
-                                <a href="{{home}}#pressons" class="block px-4 py-2 hover:bg-gray-600">Press-On Nails</a>
+                                <a href="{{home}}#pressons" class="dropdown-link">Press-On Nails</a>
                             </li>
                             <li>
-                                <a href="{{home}}#kit" class="block px-4 py-2 hover:bg-gray-600">Press-On Sizing Kit</a>
+                                <a href="{{home}}#kit" class="dropdown-link">Press-On Sizing Kit</a>
                             </li>
                             <li>
-                                <a href="{{home}}#vinyls" class="block px-4 py-2 hover:bg-gray-600">Nail Art Vinyls</a>
+                                <a href="{{home}}#vinyls" class="dropdown-link">Nail Art Vinyls</a>
                             </li>
                             <li>
-                                <a href="{{home}}#decals" class="block px-4 py-2 hover:bg-gray-600">Waterslide Decals</a>
+                                <a href="{{home}}#decals" class="dropdown-link">Waterslide Decals</a>
                             </li>
                             <li>
-                                <a href="{{home}}#jewelry" class="block px-4 py-2 hover:bg-gray-600">Jewelry</a>
+                                <a href="{{home}}#jewelry" class="dropdown-link">Jewelry</a>
                             </li>
                         </ul>
                     </div>
