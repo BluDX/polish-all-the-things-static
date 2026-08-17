@@ -59,3 +59,8 @@ h5 {
     @apply flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-600 lg:hover:bg-transparent
     lg:border-0 lg:hover:text-secondary lg:p-0 lg:w-auto lg:text-text;
 }
+
+
+.page-gradient {
+    @apply bg-gradient-to-b from-fuchsia-400 via-purple-400 via-blue-400 to-emerald-600;
+}
