@@ -222,33 +222,9 @@
 {{> footer }}
 </div>
 
+{{> back-to-top }}
+
 <script type="module" src="/src/main.js"></script>
-
-<!-- Back to Top Button (shows on scroll) -->
-<a href="#" id="back-to-top" class="hidden fixed bottom-8 right-8 bg-secondary hover:bg-accent text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 group opacity-0">
-    <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
-    </svg>
-    <span class="sr-only">Back to top</span>
-</a>
-
-
-<!--Back to Top Button-->
-<script>
-  const backToTop = document.getElementById('back-to-top');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTop.classList.remove('hidden', 'opacity-0');
-      backToTop.classList.add('opacity-100');
-    } else {
-      backToTop.classList.add('opacity-0');
-      setTimeout(() => {
-        if (window.scrollY <= 300) {
-          backToTop.classList.add('hidden');
-        }
-      }, 300);
-    }
-  });
 
   // Smooth scroll to top
   backToTop.addEventListener('click', (e) => {
@@ -257,7 +233,7 @@
   });
 </script>
 
-<!--Got this from Claude for Sticky Menus-->
+<!--Sticky Menus-->
 <script type="module" src="/src/main.js"></script>
 <script type="module">
   import { initFlowbite } from 'flowbite';
