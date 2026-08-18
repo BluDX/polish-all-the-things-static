@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <title>Polish ALL the Things! | Blog</title>
+    <link href="/src/index.css" rel="stylesheet">
+
+</head>
+<body class="font-body">
+
+{{> navbar }}
+
+<!-- Logo -->
+<img class="h-auto w-full" src="/logo.png" alt="Polish ALL the Things! Logo">
+
+<div class="page-gradient">
+
+    <!-- Blog Heading -->
+    <h4 class="pt-8 mb-7 text-4xl font-bold font-heading text-center text-text">Blog</h4>
+
+    <!-- Posts are fetched from the Blogger feed and rendered here by src/blog.js -->
+    <div id="blog-posts" class="flex flex-col items-center gap-8 px-4 pb-12">
+        <p class="text-text">Loading posts…</p>
+    </div>
+
+{{> footer }}
+</div>
+
+{{> back-to-top }}
+
+<!--Sticky Menus-->
+<script type="module" src="/src/main.js"></script>
+<script type="module">
+  import { initFlowbite } from 'flowbite';
+
+  // Initialize Flowbite when the page loads
+  document.addEventListener('DOMContentLoaded', () => {
+    initFlowbite();
+  });
+</script>
+
+<!-- Blog: fetch + render posts from the Blogger feed -->
+<script type="module" src="/src/blog.js"></script>
+
+</body>
+</html>

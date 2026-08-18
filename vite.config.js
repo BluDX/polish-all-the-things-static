@@ -15,6 +15,7 @@ const pageContext = {
   'decal-application.html':    { home: 'index.html', isHome: false, year },
   'press-on-application.html': { home: 'index.html', isHome: false, year },
   'press-on-guide.html':       { home: 'index.html', isHome: false, year },
+  'blog.html':                 { home: 'index.html', isHome: false, year },
 }
 
 export default defineConfig({
@@ -32,7 +33,8 @@ export default defineConfig({
         care: 'care-of-jewelry.html',
         decal: 'decal-application.html',
         presson: 'press-on-application.html',
-        guide: 'press-on-guide.html'
+        guide: 'press-on-guide.html',
+        blog: 'blog.html',
       }
     }
   }
